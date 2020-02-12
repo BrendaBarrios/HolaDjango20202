@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Title Page</title>
+    </head>
+    <body>
+        <h1>Hello World </h1>
+        <p>{{nombre}} tienes la edad <b>{{edad}}</b></p>
+        <table>
+            <tr>
+                <td>Materia</td>
+                <td>Calificación</td>
+            </tr>
+            {% for materia in materias %}
+                <tr>
+                    <td>{{materia.nombre}}</td>
+                    <td>{{materia.cal}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        
+    </body>
+</html>
